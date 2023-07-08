@@ -392,13 +392,15 @@
         </main>;
     }
 
-    const root = ReactDOM.createRoot(document.getElementById('app'));
-    root.render(
-        <>
-            <Header />
-            <Main />
-        </>
-    );
+    setTimeout(() => {
+        const root = ReactDOM.createRoot(document.getElementById('app'));
+        root.render(
+            <>
+                <Header />
+                <Main />
+            </>
+        );
+    }, 100);
 </script>
 
 </body>
